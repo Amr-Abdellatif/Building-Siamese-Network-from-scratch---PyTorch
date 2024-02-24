@@ -1,0 +1,9 @@
+# A Siamese network is a type of neural network architecture that is used for tasks where the goal is to determine the similarity or relationship between two inputs. It is named after the Siamese twins, who are joined at the head, to symbolize the network's ability to learn to differentiate between two inputs. Siamese networks are particularly useful in tasks such as face recognition, signature verification, and anomaly detection, where the goal is to determine whether two inputs are similar or not.
+
+## How Siamese Networks Work
+
+1. Shared Feature Extraction: A Siamese network consists of two identical neural networks (often referred to as "twin" networks) that share the same parameters. These networks are responsible for extracting features from the inputs. The key idea is that both networks learn to extract the same features from their inputs, but they do not share weights or biases.
+
+2. Feature Comparison: After the feature extraction, the outputs of the two networks are compared. This comparison can be done in various ways, such as calculating the Euclidean distance between the feature vectors or using a more complex method like a fully connected layer followed by a softmax activation function to produce a similarity score.
+
+3. Loss Function: The network is trained using a contrastive loss function, which encourages the network to learn to output similar feature vectors for similar inputs and different feature vectors for dissimilar inputs. The contrastive loss function is designed to maximize the distance between the feature vectors of dissimilar pairs and minimize the distance between the feature vectors of similar pairs.
